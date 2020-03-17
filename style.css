@@ -35,7 +35,8 @@ html {
     position: absolute;
     z-index: 1;
     animation: wind 2s linear infinite;
-    transition: transform 400ms linear;
+    animation-delay: 20ms;
+    transition: transform 300ms linear;
 }
 @keyframes wind{
     from { 
@@ -49,7 +50,7 @@ html {
     position: absolute;
     animation: step3 6s linear infinite;
     animation-delay: 300ms;
-    transition: transform 300ms linear, opacity 300ms, visibility 0s;
+    transition: transform 300ms linear, opacity 0ms, visibility 0s;
 }
 
 @keyframes step3{
@@ -98,7 +99,7 @@ html {
     position: absolute;
     animation: step1 6s linear infinite;
     animation-delay: 300ms;
-    transition: transform 300ms linear, opacity 30ms, visibility 0s;
+    transition: transform 300ms linear, opacity 0ms, visibility 0s;
 }
 
 @keyframes step1{
