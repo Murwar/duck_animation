@@ -1,0 +1,97 @@
+html {
+    background-color: #d7ccc8;
+}
+
+.loader{
+    display: block;
+    position: absolute;
+    margin: 16% 42%;
+    height: 200px;
+    width: 200px;
+}
+
+.duck{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 41%;
+    animation: duck_around 3s linear infinite;
+}
+
+@keyframes duck_around{
+    from { 
+        transform: rotate(0deg) translateX(90px) rotate(90deg); 
+    }
+    to   {  
+        transform: rotate(360deg) translateX(90px) rotate(90deg); 
+    }
+}
+
+.coffee_step3{
+    position: absolute;
+    animation: step3 6s linear infinite;
+    animation-delay: 300ms;
+}
+
+@keyframes step3{
+    from { 
+        transform: rotate(0deg); 
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to  {  
+        transform:  rotate(360deg); 
+        opacity: 1;
+    }
+}
+
+.coffee_step2{
+    position: absolute;
+    animation: step2 6s linear infinite;
+}
+
+@keyframes step2{
+    from { 
+        visibility: hidden;
+        transform: rotate(0deg); 
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+    to  {  
+        transform:  rotate(360deg); 
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+.coffee_step1{
+    position: absolute;
+    animation: step1 6s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes step1{
+    from { 
+        visibility: hidden;
+        transform: rotate(0deg); 
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+    to  {  
+        transform:  rotate(360deg); 
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
