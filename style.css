@@ -1,13 +1,14 @@
 html {
     background-color: #d7ccc8;
-    height: 100%;
-    width: 100%;
+    height: 700px;
+    width: 1500px;
 }
 
 .loader{
     display: block;
     position: absolute;
-    margin: 16% 42%;
+    animation-play-state: running;
+    margin: 250px 650px;
     height: 200px;
     width: 200px;
 }
