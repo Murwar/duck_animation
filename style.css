@@ -15,7 +15,7 @@ html {
     z-index: 1;
     top: 40%;
     left: 41%;
-    animation: duck_around 3s linear infinite;
+    animation: duck_around 2s linear infinite;
 }
 
 @keyframes duck_around{
