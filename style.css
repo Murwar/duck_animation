@@ -1,23 +1,23 @@
 html {
     background-color: #d7ccc8;
-    height: 700px;
-    width: 1500px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
 .loader{
-    display: block;
-    position: absolute;
-    animation-play-state: running;
-    margin: 250px 650px;
     height: 200px;
     width: 200px;
+    top: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .duck{
     position: absolute;
     z-index: 1;
-    top: 40%;
-    left: 41%;
     animation: duck_around 2s linear infinite;
 }
 
