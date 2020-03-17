@@ -35,7 +35,7 @@ html {
     position: absolute;
     z-index: 1;
     animation: wind 2s linear infinite;
-    transition: transform 300ms linear;
+    transition: transform 400ms linear;
 }
 @keyframes wind{
     from { 
@@ -72,7 +72,7 @@ html {
 .coffee_step2{
     position: absolute;
     animation: step2 6s linear infinite;
-    transition: transform 300ms linear, opacity 30ms, visibility 0s;
+    transition: transform 300ms linear, opacity 0ms, visibility 0s;
 }
 
 @keyframes step2{
