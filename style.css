@@ -11,33 +11,52 @@ html {
     align-items: center;
     justify-content: center;
     top: 50%;
+    animation-name: loader;
 }
 
 .duck{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     animation: duck_around 2s linear infinite;
+    transition: transform 300ms linear;
 }
 
 @keyframes duck_around{
     from { 
         transform: rotate(0deg) translateX(90px) rotate(90deg); 
+        
     }
     to   {  
         transform: rotate(360deg) translateX(90px) rotate(90deg); 
     }
 }
 
+.wind{
+    position: absolute;
+    z-index: 1;
+    animation: wind 2s linear infinite;
+    transition: transform 300ms linear;
+}
+@keyframes wind{
+    from { 
+        transform: rotate(0deg) translateX(90px) rotate(-90deg); 
+    }
+    to   {  
+        transform: rotate(360deg) translateX(90px) rotate(-90deg); 
+    }
+}
 .coffee_step3{
     position: absolute;
     animation: step3 6s linear infinite;
     animation-delay: 300ms;
+    transition: transform 300ms linear, opacity 300ms, visibility 0s;
 }
 
 @keyframes step3{
     from { 
         transform: rotate(0deg); 
         opacity: 1;
+        visibility: visible;
     }
     50%{
         opacity: 0;
@@ -46,12 +65,14 @@ html {
     to  {  
         transform:  rotate(360deg); 
         opacity: 1;
+        visibility: visible;
     }
 }
 
 .coffee_step2{
     position: absolute;
     animation: step2 6s linear infinite;
+    transition: transform 300ms linear, opacity 30ms, visibility 0s;
 }
 
 @keyframes step2{
@@ -76,7 +97,8 @@ html {
 .coffee_step1{
     position: absolute;
     animation: step1 6s linear infinite;
-    animation-delay: 1s;
+    animation-delay: 300ms;
+    transition: transform 300ms linear, opacity 30ms, visibility 0s;
 }
 
 @keyframes step1{
