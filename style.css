@@ -1,7 +1,7 @@
 html {
     background-color: #d7ccc8;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .loader{
@@ -9,14 +9,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(110%);
+    transform:translateY(110%);
     transition: transform 0ms ease-out;
 }
 
 .duck{
     z-index: 2;
     animation: duck_around 2s linear infinite;
-    transition: transform 300ms linear;
+    transition: transform 0ms ease-out;
 }
 
 @keyframes duck_around{
@@ -38,7 +38,7 @@ html {
     z-index: 1;
     animation: wind 2s linear infinite;
     animation-delay: 30ms;
-    transition: transform 300ms linear;
+    transition: transform 0ms ease-out;
 }
 
 @keyframes wind{
@@ -57,7 +57,7 @@ html {
 .coffee_step3{
     animation: step3 6s linear infinite;
     animation-delay: 300ms;
-    transition: transform 300ms linear, opacity 300ms;
+    transition: transform 0ms ease-out, opacity 0ms;
 }
 
 @keyframes step3{
@@ -79,7 +79,7 @@ html {
 
 .coffee_step2{
     animation: step2 6s linear infinite;
-    transition: transform 300ms linear, opacity 30ms;
+    transition: transform 0ms ease-out, opacity 0ms;
 }
 
 @keyframes step2{
@@ -104,7 +104,7 @@ html {
     animation: step1 6s linear infinite;
     animation-delay: 300ms;
     
-    transition: transform 300ms linear, opacity 30ms;
+    transition: transform 0ms ease-out, opacity 0ms;
 }
 
 @keyframes step1{
