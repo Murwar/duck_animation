@@ -7,7 +7,7 @@
         <title>Duck-duck animation</title>
     </head>
     
-    <body>
+    <body id="transition_disabled">
         <div class="loader">
             <div class="duck"><img src="images/duck_mini.png"></div>
             <div class="wind"> <img src="images/wind.png"> </div>
@@ -16,5 +16,10 @@
             <div class="coffee_step3"><img src="images/pngocean4.png" id="step4">
             </div>
         </div>
+        <script>
+            $("window").load(function() {
+                $("body").removeAttr("id");
+            });
+        </script>
     </body>
 </html>
