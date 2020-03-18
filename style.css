@@ -1,99 +1,98 @@
+
+
 html {
     background-color: #d7ccc8;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    height: 100%;
 }
 
 .loader{
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform:translateY(110%);
-    transition: transform 0ms ease-out;
+    top: 50%;
 }
 
 .duck{
+    position: absolute;
     z-index: 2;
     animation: duck_around 2s linear infinite;
-    transition: transform 0ms ease-out;
+    transition: transform 300ms ease-out;
 }
 
 @keyframes duck_around{
     from { 
-        -webkit-transform: translateX(327px) rotate(0deg) translateX(90px) rotate(90deg); 
-        
-        transform:translateX(327px) rotate(0deg) translateX(90px) rotate(90deg); 
+        -webkit-transform: rotate(0deg) translateX(90px) rotate(90deg); 
+        transform: rotate(0deg) translateX(90px) rotate(90deg); 
         
     }
-    to   {  
-        -webkit-transform:translateX(327px) 
-         rotate(360deg) translateX(90px) rotate(90deg); 
-        
-        transform:translateX(327px) rotate(360deg) translateX(90px) rotate(90deg); 
+    to {  
+        -webkit-transform: rotate(360deg) translateX(90px) rotate(90deg); 
+        transform: rotate(360deg) translateX(90px) rotate(90deg); 
     }
 }
 
 .wind{
+    position: absolute;
     z-index: 1;
     animation: wind 2s linear infinite;
     animation-delay: 30ms;
-    transition: transform 0ms ease-out;
+    transition: transform 300ms ease-out;
 }
 
 @keyframes wind{
     from { 
-        -webkit-transform: translateX(285px) rotate(0deg) translateX(90px) rotate(90deg);
-        
-        transform:translateX(285px) rotate(0deg) translateX(90px) rotate(-90deg); 
+        -webkit-transform:rotate(0deg) translateX(90px) rotate(90deg);
+        transform: rotate(0deg) translateX(90px) rotate(-90deg); 
     }
     to   {  
-        -webkit-transform:
-        translateX(285px)  rotate(360deg) translateX(90px) rotate(90deg); 
-        
-        transform:translateX(285px) rotate(360deg) translateX(90px) rotate(-90deg); 
+        -webkit-transform: rotate(360deg) translateX(90px) rotate(90deg); 
+        transform: rotate(360deg) translateX(90px) rotate(-90deg); 
     }
 }
 .coffee_step3{
+    position: absolute;
     animation: step3 6s linear infinite;
     animation-delay: 300ms;
-    transition: transform 0ms ease-out, opacity 0ms;
+    transition: transform 300ms ease-out, opacity 0ms;
 }
 
 @keyframes step3{
     from { 
-        -webkit-transform: translateX(-120%) rotate(0deg); 
-        
-        transform: translateX(-120%)rotate(0deg); 
+        -webkit-transform: rotate(0deg); 
+        transform: rotate(0deg); 
         opacity: 1;
     }
     50%{
         opacity: 0;
     }
     to  {  
-        -webkit-transform:translateX(-120%) rotate(360deg); 
-        transform: translateX(-120%) rotate(360deg); 
+        -webkit-transform: rotate(360deg); 
+        transform: rotate(360deg); 
         opacity: 1;
     }
 }
 
 .coffee_step2{
+    position: absolute;
     animation: step2 6s linear infinite;
-    transition: transform 0ms ease-out, opacity 0ms;
+    transition: transform 300ms ease-out, opacity 0ms;
 }
 
 @keyframes step2{
     from { 
-        -webkit-transform:translateX(-20%)  rotate(0deg); 
-        transform: translateX(-20%)  rotate(0deg); 
+        -webkit-transform:  rotate(0deg); 
+        transform:  rotate(0deg); 
         opacity: 0;
     }
     50%{
         opacity: 1;
     }
     to  {  
-        -webkit-transform:translateX(-20%)  rotate(360deg); 
-        transform: translateX(-20%)  rotate(360deg); 
+        -webkit-transform:  rotate(360deg); 
+        transform:  rotate(360deg); 
         opacity: 0;
     }
 }
@@ -101,16 +100,17 @@ html {
 
 
 .coffee_step1{
+    position: absolute;
     animation: step1 6s linear infinite;
     animation-delay: 300ms;
     
-    transition: transform 0ms ease-out, opacity 0ms;
+    transition: transform 300ms ease-out, opacity 0ms;
 }
 
 @keyframes step1{
     from { 
         -webkit-transform:rotate(0deg); 
-        transform: translateX(80%)  rotate(0deg); 
+        transform: rotate(0deg); 
         opacity: 0;
     }
     50%{
@@ -118,7 +118,7 @@ html {
     }
     to  {  
         -webkit-transform:rotate(360deg); 
-        transform:translateX(80%)   rotate(360deg); 
+        transform:  rotate(360deg); 
         opacity: 0;
     }
 }
