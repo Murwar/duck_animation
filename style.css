@@ -17,7 +17,7 @@ html {
 
 .duck{
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     animation: duck_around 2s linear infinite;
     transition: transform 300ms ease-out;
 }
@@ -36,7 +36,7 @@ html {
 
 .wind{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     animation: wind 2s linear infinite;
     animation-delay: 30ms;
     transition: transform 300ms ease-out;
@@ -53,9 +53,10 @@ html {
     }
 }
 .coffee_step3{
+    z-index: 1;
     position: absolute;
     animation: step3 6s linear infinite;
-    animation-delay: 300ms;
+    animation-delay: 1s;
     transition: transform 300ms ease-out, opacity 0ms;
 }
 
@@ -78,6 +79,7 @@ html {
 .coffee_step2{
     position: absolute;
     animation: step2 6s linear infinite;
+    animation-delay: 1s;
     transition: transform 300ms ease-out, opacity 0ms;
 }
 
@@ -102,6 +104,7 @@ html {
 .coffee_step1{
     position: absolute;
     animation: step1 6s linear infinite;
+    animation-delay: 1s;
     animation-delay: 300ms;
     
     transition: transform 300ms ease-out, opacity 0ms;
