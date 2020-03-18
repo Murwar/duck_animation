@@ -2,19 +2,18 @@ html {
     background-color: #d7ccc8;
     display: flex;
     justify-content: center;
-    height: 100%;
 }
 
 .loader{
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50%;
+    transform: translateY(110%);
+    transition: transform 0ms ease-out;
 }
 
 .duck{
-    position: absolute;
     z-index: 2;
     animation: duck_around 2s linear infinite;
     transition: transform 300ms linear;
@@ -22,19 +21,20 @@ html {
 
 @keyframes duck_around{
     from { 
-        -webkit-transform: transform: rotate(0deg) translateX(90px) rotate(90deg); 
-        transform: rotate(0deg) translateX(90px) rotate(90deg); 
+        -webkit-transform: translateX(327px) rotate(0deg) translateX(90px) rotate(90deg); 
+        
+        transform:translateX(327px) rotate(0deg) translateX(90px) rotate(90deg); 
         
     }
     to   {  
-        -webkit-transform:
-        transform: rotate(360deg) translateX(90px) rotate(90deg); 
-        transform: rotate(360deg) translateX(90px) rotate(90deg); 
+        -webkit-transform:translateX(327px) 
+         rotate(360deg) translateX(90px) rotate(90deg); 
+        
+        transform:translateX(327px) rotate(360deg) translateX(90px) rotate(90deg); 
     }
 }
 
 .wind{
-    position: absolute;
     z-index: 1;
     animation: wind 2s linear infinite;
     animation-delay: 30ms;
@@ -43,90 +43,82 @@ html {
 
 @keyframes wind{
     from { 
-        -webkit-transform: transform: rotate(0deg) translateX(90px) rotate(90deg);
-        transform: rotate(0deg) translateX(90px) rotate(-90deg); 
+        -webkit-transform: translateX(285px) rotate(0deg) translateX(90px) rotate(90deg);
+        
+        transform:translateX(285px) rotate(0deg) translateX(90px) rotate(-90deg); 
     }
     to   {  
         -webkit-transform:
-        transform: rotate(360deg) translateX(90px) rotate(90deg); 
-        transform: rotate(360deg) translateX(90px) rotate(-90deg); 
+        translateX(285px)  rotate(360deg) translateX(90px) rotate(90deg); 
+        
+        transform:translateX(285px) rotate(360deg) translateX(90px) rotate(-90deg); 
     }
 }
 .coffee_step3{
-    position: absolute;
     animation: step3 6s linear infinite;
     animation-delay: 300ms;
-    transition: transform 300ms linear, opacity 300ms, visibility 0s;
+    transition: transform 300ms linear, opacity 300ms;
 }
 
 @keyframes step3{
     from { 
-        -webkit-transform:rotate(0deg); 
-        transform: rotate(0deg); 
+        -webkit-transform: translateX(-120%) rotate(0deg); 
+        
+        transform: translateX(-120%)rotate(0deg); 
         opacity: 1;
-        visibility: visible;
     }
     50%{
         opacity: 0;
-        visibility: hidden;
     }
     to  {  
-        -webkit-transform:rotate(360deg); 
-        transform:  rotate(360deg); 
+        -webkit-transform:translateX(-120%) rotate(360deg); 
+        transform: translateX(-120%) rotate(360deg); 
         opacity: 1;
-        visibility: visible;
     }
 }
 
 .coffee_step2{
-    position: absolute;
     animation: step2 6s linear infinite;
-    transition: transform 300ms linear, opacity 30ms, visibility 0s;
+    transition: transform 300ms linear, opacity 30ms;
 }
 
 @keyframes step2{
     from { 
-        -webkit-transform:rotate(0deg); 
-        transform: rotate(0deg); 
+        -webkit-transform:translateX(-20%)  rotate(0deg); 
+        transform: translateX(-20%)  rotate(0deg); 
         opacity: 0;
-        visibility: hidden;
     }
     50%{
         opacity: 1;
-        visibility: visible;
     }
     to  {  
-        -webkit-transform:rotate(360deg); 
-        transform:  rotate(360deg); 
+        -webkit-transform:translateX(-20%)  rotate(360deg); 
+        transform: translateX(-20%)  rotate(360deg); 
         opacity: 0;
-        visibility: hidden;
     }
 }
 
 
 
 .coffee_step1{
-    position: absolute;
     animation: step1 6s linear infinite;
     animation-delay: 300ms;
-    transition: transform 300ms linear, opacity 30ms, visibility 0s;
+    
+    transition: transform 300ms linear, opacity 30ms;
 }
 
 @keyframes step1{
     from { 
         -webkit-transform:rotate(0deg); 
-        transform: rotate(0deg); 
+        transform: translateX(80%)  rotate(0deg); 
         opacity: 0;
-        visibility: hidden;
     }
     50%{
         opacity: 1;
-        visibility: visible;
     }
     to  {  
         -webkit-transform:rotate(360deg); 
-        transform:  rotate(360deg); 
-        visibility: hidden;
+        transform:translateX(80%)   rotate(360deg); 
         opacity: 0;
     }
 }
